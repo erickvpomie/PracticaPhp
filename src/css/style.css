@@ -1,0 +1,123 @@
+:root {
+  --purple: #6c63ff;
+  --background: #1b1f22;
+}
+
+body {
+  font-family: 'inter', sans-serif;
+  margin: 0pt;
+  padding: 0pt;
+  background: var(--background);
+}
+
+.Box {
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--purple);
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 20px -16px #000000;
+}
+
+.Box h1 {
+  color: white;
+  font-size: 18pt;
+  text-transform: uppercase;
+}
+
+.Box input[type='text'],
+.Box input[type='text'] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid white;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 18pt;
+  transition: 0.25s;
+}
+
+.Box input[type='text']:focus,
+.Box input[type='text']:focus {
+  width: 250px;
+  border-color: var(--background);
+}
+
+.Box input[type='submit'] {
+  border: 0;
+  background: var(--background);
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid var(--background);
+  padding: 12px 30px;
+  outline: none;
+  color: white;
+  border-radius: 20pt;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.Box input[type='submit']:hover {
+  background: white;
+  color: var(--background);
+}
+
+.Box output[type='number'] {
+  color: var(--background);
+  font-size: 30px;
+}
+
+.img {
+  width: 300px;
+  margin-top: 10%;
+}
+
+.container {
+  width: 70%;
+  max-width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 100px 0;
+  height: auto;
+}
+
+.selector {
+  border: 0;
+  background: var(--background);
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid var(--background);
+  padding: 12px 30px;
+  outline: none;
+  color: white;
+  border-radius: 24pt;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(255, 255, 255);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(255, 255, 255);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(255, 255, 255);
+}
